@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(go build *)",
+      "Bash(go vet *)",
+      "Bash(sed -n '43,120p' /home/luren/go/pkg/mod/charm.land/bubbles/v2@v2.1.0/viewport/viewport.go)",
+      "Bash(sed -n '1,80p' /home/luren/go/pkg/mod/charm.land/bubbles/v2@v2.1.0/viewport/keymap.go)",
+      "Bash(python3 -c \"import json; d=json.load\\(open\\('app-data.json'\\)\\); print\\('connections:', [\\(c.get\\('id'\\),c.get\\('name'\\)\\) for c in d.get\\('connections',[]\\)]\\); print\\('batches conns:', [\\(b.get\\('name'\\),b.get\\('connectionId'\\)\\) for b in d.get\\('batches',[]\\)]\\)\")",
+      "Bash(gofmt *)"
+    ]
+  }
+}

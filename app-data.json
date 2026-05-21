@@ -1,0 +1,41 @@
+{
+  "connections": [
+    {
+      "id": 1,
+      "name": "as",
+      "host": "asa",
+      "port": "as",
+      "dbName": "a",
+      "user": "sa",
+      "password": "aaa"
+    },
+    {
+      "id": 2,
+      "name": "as",
+      "host": "asd",
+      "port": "asda",
+      "dbName": "asda",
+      "user": "asda",
+      "password": "aasda"
+    }
+  ],
+  "artifacts": [
+    {
+      "id": 1,
+      "order": 1,
+      "name": "1.sql",
+      "path": "C:\\DevStuff\\SideUnrelatedProjects\\highway\\1.sql",
+      "annotation": ""
+    },
+    {
+      "id": 2,
+      "order": 2,
+      "name": "2.sql",
+      "path": "C:\\DevStuff\\SideUnrelatedProjects\\highway\\2.sql",
+      "annotation": ""
+    }
+  ],
+  "maxArtifactId": 2,
+  "batches": null,
+  "maxBatchId": 0
+}
