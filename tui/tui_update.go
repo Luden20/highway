@@ -372,8 +372,8 @@ func (m model) updateBatches(msg tea.Msg) (tea.Model, tea.Cmd) {
 				}
 				return m, nil
 			default:
-				if len(keyMsg.String()) == 1 {
-					m.batchConfirmInput += keyMsg.String()
+				if text := keyMsg.Key().Text; text != "" {
+					m.batchConfirmInput += text
 				}
 				return m, nil
 			}
@@ -443,7 +443,7 @@ func (m model) updateBatches(msg tea.Msg) (tea.Model, tea.Cmd) {
 			if m.batchFocus == focusBatchSteps && m.resetSelectedBatchFromArtifacts() {
 				return m.withStatus("Batch reconstruido desde el catalogo."), clearStatusAfter(2 * time.Second)
 			}
-		case " ":
+		case " ", "space":
 			if m.batchFocus == focusBatchSteps && m.toggleSelectedBatchStep() {
 				return m.withStatus("Paso del batch actualizado."), clearStatusAfter(2 * time.Second)
 			}
